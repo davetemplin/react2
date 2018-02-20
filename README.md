@@ -1,8 +1,8 @@
 # How to setup React Router
 
-This walkthrough adds scaffolding for a multi-page app with a header-bar using **react-router** and **&lt;BrowserRouter&gt;**.
+This walkthrough adds scaffolding for a multi-page app with a header-bar using **React Router**.
 
-Start with the completed [react1](https://github.com/davetemplin/react1) app.
+Starting with the completed [react1](https://github.com/davetemplin/react1) app...
 
 ```
 $ npm install react-router-dom --save
@@ -17,7 +17,7 @@ $ npm install @types/react-router-dom --save-dev
 ```
 
 
-## Add file `src/components/HomePage.tsx`
+## Add file `src/main/components/HomePage.tsx`
 ```js
 import * as React from 'react';
 import { Link } from 'react-router-dom';
@@ -31,7 +31,7 @@ export default () =>
 ```
 
 
-## Add file `src/components/AboutPage.tsx`
+## Add file `src/main/components/AboutPage.tsx`
 ```js
 import * as React from 'react';
 
@@ -43,7 +43,7 @@ export default () =>
 ```
 
 
-## Add file `src/components/HeaderBar.tsx`
+## Add file `src/main/components/HeaderBar.tsx`
 ```js
 import * as React from 'react';
 import { Link } from 'react-router-dom';
@@ -56,7 +56,8 @@ export default () =>
     </nav>
 ```
 
-## Add file `src/components/App.tsx`
+
+## Add file `src/main/components/App.tsx`
 ```js
 import * as React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
@@ -77,14 +78,12 @@ export default () =>
 ```
 
 
-
-
 ## Replace file `src/index.tsx`
 ```jsx
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import App from './components/App';
+import App from './main/components/App';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -93,6 +92,7 @@ ReactDOM.render(
     document.getElementById('app')
 );
 ```
+
 
 Navigate to http://localhost:3000 to view the **Home** page. Use the nav-bar to navigate to the **About** page, or navigate to http://localhost:3000/about.
 
