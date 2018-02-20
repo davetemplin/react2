@@ -13,6 +13,7 @@ $ npm install @types/react-router-dom --save-dev
 ## Edit `index.html` to add Bootstrap4 to the &lt;head&gt; *(optional)*
 ```html
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
 ```
 
